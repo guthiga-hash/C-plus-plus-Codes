@@ -1,0 +1,40 @@
+A program that applies proper encapsulation by making the attributes private and providing getter and setter methods.
+Name:BENEDICT GUTHIGA
+REG NO:BSE-05-0164/2024
+
+
+
+
+#include <string>
+
+class BankAccount {
+private:
+    // Private attributes
+    std::string accountNumber;
+    double balance;
+
+public:
+    // Constructor
+    BankAccount(const std::string& accountNumber, double balance) 
+        : accountNumber(accountNumber), balance(balance) {}
+
+    // Getter for accountNumber
+    std::string getAccountNumber() const {
+        return accountNumber;
+    }
+
+    // Setter for accountNumber
+    void setAccountNumber(const std::string& accountNumber) {
+        this->accountNumber = accountNumber;
+    }
+
+    // Getter for balance
+    double getBalance() const {
+        return balance;
+    }
+
+    // Setter for balance
+    void setBalance(double balance) {
+        this->balance = balance;
+    }
+};

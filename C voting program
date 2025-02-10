@@ -1,3 +1,8 @@
+A program that displays Voting in C language 
+Name:BENEDICT GUTHIGA
+REG NO:BSE-05-0164/2024
+
+
 #include<stdio.h>
 int main(){
 	int Age;

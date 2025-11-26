@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct Patient {
+    string name;
+    int age;
+    string diagnosis;
+};
+
+void displayPatient(const Patient& p) {
+    cout << "Name: " << p.name << endl;
+    cout << "Age: " << p.age << endl;
+    cout << "Diagnosis: " << p.diagnosis << endl;
+}
+
+int main() {
+    Patient patient1, patient2;
+    
+    cout << "Enter details for Patient 1:" << endl;
+    cout << "Name: ";
+    getline(cin, patient1.name);
+    cout << "Age: ";
+    cin >> patient1.age;
+    cin.ignore(); // Ignore newline character after age input
+    cout << "Diagnosis: ";
+    getline(cin, patient1.diagnosis);
+    
+    cout << "\nEnter details for Patient 2:" << endl;
+    cout << "Name: ";
+    getline(cin, patient2.name);
+    cout << "Age: ";
+    cin >> patient2.age;
+    cin.ignore(); // Ignore newline character after age input
+    cout << "Diagnosis: ";
+    getline(cin, patient2.diagnosis);
+    
+    cout << "\nPatient 1 Details:" << endl;
+    displayPatient(patient1);
+    
+    cout << "\nPatient 2 Details:" << endl;
+    displayPatient(patient2);
+    
+    return 0;
+}
+
